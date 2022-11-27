@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    display: flex; /* or css grid for more intricate layouts */
+    flex-direction: column;
+    overflow-x:hidden;
+  }
+  @font-face {
+    font-family: Pacifico;
+    src: url(Pacifico-Regular.ttf);
+  }
+  /*section 1 */
+#intro{
+    background:url(bg2.jpg);
+   background-position-x:left;
+   background-position-y: left;
+   scale: 1;
+   position:absolute;
+   top:0px;
+   right:0px;
+   bottom:0px;
+   left:0px;
+   background-origin: 0%;
+   text-align: center;
+   animation:fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#headingText{
+    color: antiquewhite;
+    font-size: 3rem;
+    position: absolute;
+    transform: translate(0,-100%);
+    top:50%;
+    left:0;
+    right: 0;
+    bottom: 50%;
+    font-family: Pacifico;
+    text-shadow: 0 0 10px #e60073, 0 0 20px #00ffff, 0 0 30px #e60073,0 0 35px rgb(0, 255,255), 0 0 40px #e60073, 0 0 50px #00ffff, 0 0 60px #e60073, 0 0 70px #00ffff;
+    animation:bounceInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s;
+}
+#moreText{
+    color: antiquewhite;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(0,-100%);
+    top:75%;
+    left:0;
+    right: 0;
+    font-family: Pacifico;
+    text-shadow: 0 0 20px #e60073, 0 50 10px #00ffff, 0 0 35px #e60073,0 50 30px rgb(0, 255,255), 0 0 50px #e60073, 0 50 40px #00ffff, 0 0 70px #e60073, 0 50 60px #00ffff;
+    animation:bounceInRight 1.5s 1; /* referring directly to the animation's @keyframe declaration */
+    animation:bounce 1.5s infinite; /* referring directly to the animation's @keyframe declaration */    
+}
+#moreText:visited{
+    animation: none;
+}
+#logo{
+    scale:0.2;
+    margin-bottom: 10rem;
+    animation:bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s;
+}
+/* section 1 ends here */
